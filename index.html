@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form class="form">
+            <h1>Signup Form</h1>
+            <label for="name">Enter Your Full Name :</label><br>
+            <input type="text" name="name" id="user-name" required><br>
+            <label for="age">Enter Your Age :</label><br>
+            <input type="text" name="age" id="user-age" required><br>
+            <label for="email">Enter Your Email :</label><br>
+            <input type="email" name="email" id="user-email" required><br>
+            <label for="name">Create Password :</label><br>
+            <input type="password" name="password" id="user-password" required><br>
+            <label for="name">Confirm Password :</label><br>
+            <input type="password" name="password" id="user-confPassword" required><br>
+            <label for="capcha">Enter Captcha Here :</label><br>
+            <div class="captcha-cont">
+                <span id="preview-captcha"></span>
+                <input type="text" name="captcha" id="captcha">
+                <button id="refresh-btn"><svg
+                        width="15px" height="15px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none">
+                        <path fill="#000000" fill-rule="evenodd"
+                            d="M7.997 16.99a1 1 0 10.292-1.98C5.89 14.657 4 12.508 4 9.86c0-2.294 1.416-4.21 3.358-4.914L6.367 7.25a1 1 0 101.837.79L9.92 4.053a1 1 0 00-.256-1.143l-3-2.658a1 1 0 10-1.326 1.496L6.78 3.027C3.988 3.986 2 6.702 2 9.86c0 3.603 2.581 6.624 5.997 7.13zm4.006-13.98a1 1 0 00-.292 1.98C14.11 5.343 16 7.492 16 10.14c0 2.294-1.416 4.21-3.358 4.913l.991-2.303a1 1 0 00-1.837-.79l-1.715 3.987a1 1 0 00.256 1.143l3 2.659a1 1 0 001.326-1.497l-1.443-1.279c2.792-.958 4.78-3.675 4.78-6.833 0-3.603-2.581-6.624-5.997-7.13z" />
+                    </svg></button><br>
+            </div>
+            <button type="submit" name="signup-btn" id="signup-btn">Sign up</button>
+        </form>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

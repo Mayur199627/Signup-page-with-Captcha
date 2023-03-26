@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script&family=Delicious+Handrawn&family=Leckerli+One&family=Mulish:wght@300&family=Permanent+Marker&family=Varela+Round&family=Zeyada&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+height: 100vh;
+width: 100%;
+background-color: #2f3640;
+font-family: 'Varela Round', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+main{
+height: 30em;
+width: 30em;
+}
+
+.form{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5em 2rem;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form h1{
+    margin-bottom:10px ;
+}
+
+.form label{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form input{
+    width: 95%;
+    padding: 0.4em;
+    border: thin solid gray;
+    outline: none;
+    border-radius: 30px;
+    margin-top: 5px;
+    
+}
+#preview-captcha{
+width: 40%;
+border: thin solid gray;
+border-radius: 5px;
+padding: 0 10px;
+background-color: #ecf0f1;
+font-weight: 600;
+margin-top: 5px;
+}
+
+#captcha{
+    width: 40%;
+    border-radius: 5px;
+}
+
+.captcha-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+#refresh-btn{
+    margin-top: 5px;
+}
+
+
+#signup-btn{
+    width: 20%;
+    height: 10%;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:640px) {
+    main{
+        height: 20em;
+        width: 20em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form{
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 1em;
+        height: 150%;
+        width: 80%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .form label{
+        font-size: 0.8em;
+        font-weight: 600;
+    }
+
+    .captcha-cont{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.1em;
+    }
+
+    #signup-btn{
+        margin-top: 0.5em;
+        width: 30%;
+    }    
+    .form input{
+        padding: 0.2em;
+    }
+}
